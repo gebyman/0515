@@ -285,18 +285,127 @@ body{
 .dot{
     margin-top: 10px;
 }
+@media (max-width: 1080px) {
+    body,html{
+     overflow-x: hidden;
+    }
+   
+     .desktop {
+         display: none;
+     }
+     .head {
+         max-width: 376px;
+     }
+     .headerham {
+         background-color: #fff;
+         height: 44px;
+         padding: 0 16px;
+         display: block;
+         margin-right: 40px;
+     }
+     .head {
+         position: relative;
+     }
+     .hamburger-container {
+         width: 20px;
+         height: 20px;
+         display: block;
+         position: relative;
+         top: 16px;
+     }
+     .hamburger-container span {
+         display: block;
+         height: 1px;
+         background: #000;
+         position: relative;
+         transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+         top: 0;
+     }
+     #toggler:checked + label .hamburger-container span:nth-child(1) {
+         transform: rotate(45deg);
+         top: 4px;
+         transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+     }
+     #toggler:checked + label .hamburger-container span:nth-child(2) {
+         transform: rotate(-45deg);
+         top: -4px;
+         transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+     }
+     .hamburger-container span:nth-child(2) {
+         margin-top: 7px;
+     }
+     #burger:checked ~ .mobile {
+         display: block;
+     }
+     .nav-items {
+         background-color: #f5f5ff;
+         width: 100%;
+         height: 100vh;
+         position: absolute;
+         top: 44px;
+         left: 0;
+         transform: scaleY(0);
+         transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+         transform-origin: 50% 0;
+         opacity: 0;
+     }
+     #toggler:checked ~ .nav-items {
+         transform: scaleY(1);
+         opacity: 1;
+     }
+     .nav-items ul {
+         display: flex;
+         flex-direction: column;
+         margin-left: 80px;
+         margin-top: 30px;
+     }
+     .nav-items ul li {
+         line-height: 60px;
+         font-size: 36px;
+         font-weight: bold;
+     }
+     .wrap{
+         display: flex;
+         flex-direction: column;
+     }
+    .footer{
+     display: flex;
+     flex-direction: column;
+    }
+    .bg{
+    width: 290px;
+     margin-bottom: 0;
+    }
+    .rwd{
+     margin-right: 60px;
+    }
+    .content h3{
+     font-size: 13px;
+    }
+ }
+ 
 @media (max-width: 376px) {
+   body,html{
+    overflow-x: hidden;
+   }
+  
     .desktop {
         display: none;
     }
     .head {
         max-width: 376px;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
     }
     .headerham {
         background-color: #fff;
         height: 44px;
-        padding: 0 18px;
+        padding: 0 16px;
         display: block;
+        margin-right: 40px;
     }
     .head {
         position: relative;
@@ -359,4 +468,32 @@ body{
         font-size: 36px;
         font-weight: bold;
     }
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .wrap::after { clear: both; content: ""; display: table; }
+   .footer{
+    display: flex;
+    flex-direction: column;
+   }
+   .bg{
+   width: 290px;
+    margin-bottom: 0;
+   }
+   .rwd{
+    margin-right: 60px;
+   }
+   .content h3{
+    font-size: 13px;
+   }
+   .footer{
+    padding-bottom: 60px;
+
+   }
+   .slideshow-container{
+    width: 100%;
+    overflow: hidden;
+   }
 }
