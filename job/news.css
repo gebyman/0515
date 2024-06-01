@@ -194,7 +194,7 @@ body,html{
     color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 18px;
-    transition: 0.6s ease;
+    transition: 0.6s ease-in-out;
     border-radius: 0 3px 3px 0;
 }
 
@@ -472,11 +472,14 @@ body,html{
         font-size: 36px;
         font-weight: bold;
     }
-    
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(0);
+        opacity: 0;
+    }
    .box1,.box2{
     margin-right: 60px;
    }
-    .wrap::after { clear: both; content: ""; display: table; }
+    
    .footer{
     display: flex;
     flex-direction: column;
