@@ -1,7 +1,9 @@
 body{
 	background: rgb(221, 247, 238);
 }
-
+body,html{
+    overflow-x: hidden
+}
 .head {
     position: fixed; 
     top: 0; 
@@ -109,7 +111,7 @@ body{
 .bg{
     margin-left: 30px;
     height: 100px;
-    width:650px;
+    
     background: #b8cbc2;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -287,7 +289,7 @@ body{
 }
 @media (max-width: 1080px) {
     body,html{
-     overflow-x: hidden;
+        overflow-x: hidden
     }
    
      .desktop {
@@ -385,9 +387,9 @@ body{
  }
  
 @media (max-width: 376px) {
-   body,html{
-    overflow-x: hidden;
-   }
+    body,html{
+        overflow-x: hidden;
+    }
   
     .desktop {
         display: none;
@@ -405,7 +407,8 @@ body{
         height: 44px;
         padding: 0 16px;
         display: block;
-        margin-right: 40px;
+        margin-right: 10px;
+        border-radius: 15%;
     }
     .head {
         position: relative;
@@ -443,10 +446,11 @@ body{
     }
     .nav-items {
         background-color: #f5f5ff;
+        color: #000;
         width: 100%;
-        height: 100vh;
+        height: 216vh;
         position: absolute;
-        top: 44px;
+        top: 80px;
         left: 0;
         transform: scaleY(0);
         transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
@@ -460,7 +464,7 @@ body{
     .nav-items ul {
         display: flex;
         flex-direction: column;
-        margin-left: 80px;
+        margin-left:60px;
         margin-top: 30px;
     }
     .nav-items ul li {
@@ -468,18 +472,17 @@ body{
         font-size: 36px;
         font-weight: bold;
     }
-    .wrap{
-        display: flex;
-        flex-direction: column;
-        
-    }
+    
+   .box1,.box2{
+    margin-right: 60px;
+   }
     .wrap::after { clear: both; content: ""; display: table; }
    .footer{
     display: flex;
     flex-direction: column;
    }
    .bg{
-   width: 290px;
+    width: 100%;
     margin-bottom: 0;
    }
    .rwd{
@@ -489,11 +492,26 @@ body{
     font-size: 13px;
    }
    .footer{
-    padding-bottom: 60px;
-
+    padding-bottom: 120px;
+    text-align: center;
+   }
+   .footerLine{
+    margin-left: 60px;
    }
    .slideshow-container{
     width: 100%;
     overflow: hidden;
    }
+   .prev{
+    position:unset;
+       
+   }
+    .next{
+        position: unset ;
+       
+   }
+    .dot{
+        position: relative;
+   }
+    
 }
