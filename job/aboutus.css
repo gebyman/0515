@@ -170,3 +170,1545 @@ body {
     justify-content: center;
     align-items: center;
 }
+#toggler{
+    display: none;
+}
+.desktop {
+    display: none ;
+}
+@media (max-width:769px){
+	body, html {
+        overflow-x: hidden;
+		
+    }
+    .desktop {
+        display: none ;
+    }
+    .head {
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    
+    .headerham {
+        background-color: #fff;
+        height: 44px;
+        padding: 0 16px;
+        display: block;
+        margin-right: 10px;
+        border-radius: 15%;
+    }
+    .head {
+        position: relative;
+    }
+    .hamburger-container {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+    .hamburger-container span {
+        display: block;
+        height: 1px;
+        background: #000;
+        position: relative;
+        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+        top: 0;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+    }
+    #burger:checked ~ .mobile {
+        display: block;
+    }
+    .nav-items {
+        background-color: #f5f5ff;
+        color: #000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .nav-items ul li {
+        line-height: 60px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+	#toggler{
+		display: none;
+	}
+	.footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    .connection {
+        margin-top: 30px;
+    }
+    .footerLine {
+        margin-left: 260px;
+    
+    }
+    .introImg{
+    width: 360px;
+    height: 360px;
+    }
+    .introduction h2{
+        width: 340px;
+    }
+    .safe{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        position: relative;
+        width: 405px;
+    }
+    .circle img{
+        position: absolute;
+        padding-right: 90px;
+        bottom:2px;
+        right: -235px;
+    }
+}
+@media (max-width:1025px){
+	body, html {
+        overflow-x: hidden;
+		
+    }
+    .desktop {
+        display: none ;
+    }
+    .head {
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    
+    .headerham {
+        background-color: #fff;
+        height: 44px;
+        padding: 0 16px;
+        display: block;
+        margin-right: 10px;
+        border-radius: 15%;
+    }
+    .head {
+        position: relative;
+    }
+    .hamburger-container {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+    .hamburger-container span {
+        display: block;
+        height: 1px;
+        background: #000;
+        position: relative;
+        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+        top: 0;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+    }
+    #burger:checked ~ .mobile {
+        display: block;
+    }
+    .nav-items {
+        background-color: #f5f5ff;
+        color: #000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .nav-items ul li {
+        line-height: 60px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+	#toggler{
+		display: none;
+	}
+	.footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    .connection {
+        margin-top: 30px;
+    }
+    .footerLine {
+        margin-left: 250px;
+        padding-right: 150px;
+    }
+    .introImg{
+    width: 360px;
+    height: 360px;
+    }
+    .introduction h2{
+        width: 340px;
+    }
+    .safe{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        position: relative;
+        width: 405px;
+    }
+    .circle img{
+        position: absolute;
+        padding-right: 90px;
+        bottom:2px;
+        right: -235px;
+    }
+}
+@media (max-width:913px){
+	body, html {
+        overflow-x: hidden;
+		
+    }
+    .desktop {
+        display: none ;
+    }
+    .head {
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    
+    .headerham {
+        background-color: #fff;
+        height: 44px;
+        padding: 0 16px;
+        display: block;
+        margin-right: 10px;
+        border-radius: 15%;
+    }
+    .head {
+        position: relative;
+    }
+    .hamburger-container {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+    .hamburger-container span {
+        display: block;
+        height: 1px;
+        background: #000;
+        position: relative;
+        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+        top: 0;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+    }
+    #burger:checked ~ .mobile {
+        display: block;
+    }
+    .nav-items {
+        background-color: #f5f5ff;
+        color: #000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .nav-items ul li {
+        line-height: 60px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+	#toggler{
+		display: none;
+	}
+	.footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    .connection {
+        margin-top: 30px;
+    }
+    .footerLine {
+        margin-left: 330px ;
+        
+    }
+    .introImg{
+    width: 360px;
+    height: 360px;
+    }
+    .introduction h2{
+        width: 600px;
+    }
+    .safe{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        position: relative;
+        width: 405px;
+    }
+    .circle img{
+        position: absolute;
+        padding-right: 90px;
+        bottom:2px;
+        right: -235px;
+    }
+}
+@media (max-width:854px){
+	body, html {
+        overflow-x: hidden;
+		
+    }
+    .desktop {
+        display: none ;
+    }
+    .head {
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    
+    .headerham {
+        background-color: #fff;
+        height: 44px;
+        padding: 0 16px;
+        display: block;
+        margin-right: 10px;
+        border-radius: 15%;
+    }
+    .head {
+        position: relative;
+    }
+    .hamburger-container {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+    .hamburger-container span {
+        display: block;
+        height: 1px;
+        background: #000;
+        position: relative;
+        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+        top: 0;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+    }
+    #burger:checked ~ .mobile {
+        display: block;
+    }
+    .nav-items {
+        background-color: #f5f5ff;
+        color: #000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .nav-items ul li {
+        line-height: 60px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+	#toggler{
+		display: none;
+	}
+	.footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    .connection {
+        margin-top: 30px;
+    }
+    .footerLine {
+        margin-left: 20px ;
+        
+    }
+    .introImg{
+    width: 360px;
+    height: 360px;
+    }
+    .introduction h2{
+        width: 600px;
+    }
+    .safe{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        position: relative;
+        width: 405px;
+    }
+    .circle img{
+        position: absolute;
+        padding-right: 90px;
+        bottom:2px;
+        right: -235px;
+    }
+}
+@media (max-width:821px){
+	body, html {
+        overflow-x: hidden;
+		
+    }
+    .desktop {
+        display: none ;
+    }
+    .head {
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    
+    .headerham {
+        background-color: #fff;
+        height: 44px;
+        padding: 0 16px;
+        display: block;
+        margin-right: 10px;
+        border-radius: 15%;
+    }
+    .head {
+        position: relative;
+    }
+    .hamburger-container {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+    .hamburger-container span {
+        display: block;
+        height: 1px;
+        background: #000;
+        position: relative;
+        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+        top: 0;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+    }
+    #burger:checked ~ .mobile {
+        display: block;
+    }
+    .nav-items {
+        background-color: #f5f5ff;
+        color: #000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .nav-items ul li {
+        line-height: 60px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+	#toggler{
+		display: none;
+	}
+	.footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    .connection {
+        margin-top: 30px;
+    }
+    .footerLine {
+        margin-left: 200px ;
+        padding: 0;
+    }
+    .introImg{
+    width: 360px;
+    height: 360px;
+    }
+    .introduction h2{
+        width: 600px;
+    }
+    .safe{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        position: relative;
+        width: 405px;
+    }
+    .circle img{
+        position: absolute;
+        padding-right: 90px;
+        bottom:2px;
+        right: -235px;
+    }
+}
+
+@media (max-width:541px){
+	body, html {
+        overflow-x: hidden;
+		
+    }
+    .desktop {
+        display: none ;
+    }
+    .head {
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    
+    .headerham {
+        background-color: #fff;
+        height: 44px;
+        padding: 0 16px;
+        display: block;
+        margin-right: 10px;
+        border-radius: 15%;
+    }
+    .head {
+        position: relative;
+    }
+    .hamburger-container {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+    .hamburger-container span {
+        display: block;
+        height: 1px;
+        background: #000;
+        position: relative;
+        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+        top: 0;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+    }
+    #burger:checked ~ .mobile {
+        display: block;
+    }
+    .nav-items {
+        background-color: #f5f5ff;
+        color: #000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .nav-items ul li {
+        line-height: 60px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+	#toggler{
+		display: none;
+	}
+	.footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    .connection {
+        margin-top: 30px;
+    }
+    .footerLine {
+        margin-left: 140px;
+        padding-right: 0px;
+    }
+    .introImg{
+    width: 360px;
+    height: 360px;
+    }
+    .introduction h2{
+        width: 340px;
+    }
+    .safe{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        position: relative;
+        width: 405px;
+    }
+    .circle img{
+        position: absolute;
+        padding-right: 90px;
+        bottom:2px;
+        right: -235px;
+    }
+}
+
+@media (max-width:431px){
+	body, html {
+        overflow-x: hidden;
+		
+    }
+    .desktop {
+        display: none ;
+    }
+    .head {
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    
+    .headerham {
+        background-color: #fff;
+        height: 44px;
+        padding: 0 16px;
+        display: block;
+        margin-right: 10px;
+        border-radius: 15%;
+    }
+    .head {
+        position: relative;
+    }
+    .hamburger-container {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+    .hamburger-container span {
+        display: block;
+        height: 1px;
+        background: #000;
+        position: relative;
+        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+        top: 0;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+    }
+    #burger:checked ~ .mobile {
+        display: block;
+    }
+    .nav-items {
+        background-color: #f5f5ff;
+        color: #000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .nav-items ul li {
+        line-height: 60px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+	#toggler{
+		display: none;
+	}
+	.footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    .connection {
+        margin-top: 30px;
+    }
+    .footerLine {
+        margin-left: 90px;
+    
+    }
+    .introImg{
+    width: 360px;
+    height: 360px;
+    }
+    .introduction h2{
+        width: 340px;
+    }
+    .safe{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        position: relative;
+        width: 405px;
+    }
+    .circle img{
+        position: absolute;
+        padding-right: 90px;
+        bottom:2px;
+        right: -235px;
+    }
+}
+@media (max-width:415px){
+	body, html {
+        overflow-x: hidden;
+		
+    }
+    .desktop {
+        display: none ;
+    }
+    .head {
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    
+    .headerham {
+        background-color: #fff;
+        height: 44px;
+        padding: 0 16px;
+        display: block;
+        margin-right: 10px;
+        border-radius: 15%;
+    }
+    .head {
+        position: relative;
+    }
+    .hamburger-container {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+    .hamburger-container span {
+        display: block;
+        height: 1px;
+        background: #000;
+        position: relative;
+        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+        top: 0;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+    }
+    #burger:checked ~ .mobile {
+        display: block;
+    }
+    .nav-items {
+        background-color: #f5f5ff;
+        color: #000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .nav-items ul li {
+        line-height: 60px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+	#toggler{
+		display: none;
+	}
+	.footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    .connection {
+        margin-top: 30px;
+    }
+    .footerLine {
+        margin-left: 80px;
+    
+    }
+    .introImg{
+    width: 360px;
+    height: 360px;
+    }
+    .introduction h2{
+        width: 340px;
+    }
+    .safe{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        position: relative;
+        width: 390px;
+    }
+    .circle img{
+        position: absolute;
+        padding-right: 90px;
+        bottom:2px;
+        right: -220px;
+    }
+}
+@media (max-width:391px){
+	body, html {
+        overflow-x: hidden;
+		
+    }
+    .desktop {
+        display: none ;
+    }
+    .head {
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    
+    .headerham {
+        background-color: #fff;
+        height: 44px;
+        padding: 0 16px;
+        display: block;
+        margin-right: 10px;
+        border-radius: 15%;
+    }
+    .head {
+        position: relative;
+    }
+    .hamburger-container {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+    .hamburger-container span {
+        display: block;
+        height: 1px;
+        background: #000;
+        position: relative;
+        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+        top: 0;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+    }
+    #burger:checked ~ .mobile {
+        display: block;
+    }
+    .nav-items {
+        background-color: #f5f5ff;
+        color: #000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .nav-items ul li {
+        line-height: 60px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+	#toggler{
+		display: none;
+	}
+	.footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    .connection {
+        margin-top: 30px;
+    }
+    .footerLine {
+        margin-left: 70px;
+    
+    }
+    .introImg{
+    width: 360px;
+    height: 360px;
+    }
+    .introduction h2{
+        width: 340px;
+    }
+    .safe{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        position: relative;
+        width: 365px;
+    }
+    .circle img{
+        position: absolute;
+        padding-right: 90px;
+        bottom:2px;
+        right: -210px;
+    }
+}
+@media (max-width:376px){
+	body, html {
+        overflow-x: hidden;
+		
+    }
+    .desktop {
+        display: none ;
+    }
+    .head {
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    
+    .headerham {
+        background-color: #fff;
+        height: 44px;
+        padding: 0 16px;
+        display: block;
+        margin-right: 10px;
+        border-radius: 15%;
+    }
+    .head {
+        position: relative;
+    }
+    .hamburger-container {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+    .hamburger-container span {
+        display: block;
+        height: 1px;
+        background: #000;
+        position: relative;
+        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+        top: 0;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+    }
+    #burger:checked ~ .mobile {
+        display: block;
+    }
+    .nav-items {
+        background-color: #f5f5ff;
+        color: #000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .nav-items ul li {
+        line-height: 60px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+	#toggler{
+		display: none;
+	}
+	.footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    .connection {
+        margin-top: 30px;
+    }
+    .footerLine {
+        margin-left: 60px;
+    
+    }
+    .introImg{
+    width: 360px;
+    height: 360px;
+    }
+    .introduction h2{
+        width: 340px;
+    }
+    .safe{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        position: relative;
+        width: 350px;
+    }
+    .circle img{
+        position: absolute;
+        padding-right: 90px;
+        bottom:2px;
+        right: -200px;
+    }
+}
+@media (max-width:361px){
+	body, html {
+        overflow-x: hidden;
+		
+    }
+    .desktop {
+        display: none ;
+    }
+    .head {
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    
+    .headerham {
+        background-color: #fff;
+        height: 44px;
+        padding: 0 16px;
+        display: block;
+        margin-right: 10px;
+        border-radius: 15%;
+    }
+    .head {
+        position: relative;
+    }
+    .hamburger-container {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+    .hamburger-container span {
+        display: block;
+        height: 1px;
+        background: #000;
+        position: relative;
+        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+        top: 0;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+    }
+    #burger:checked ~ .mobile {
+        display: block;
+    }
+    .nav-items {
+        background-color: #f5f5ff;
+        color: #000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .nav-items ul li {
+        line-height: 60px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+	#toggler{
+		display: none;
+	}
+	.footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    .connection {
+        margin-top: 30px;
+    }
+    .footerLine {
+        margin-left: 60px;
+    
+    }
+    .introImg{
+    width: 360px;
+    height: 360px;
+    }
+    .introduction h2{
+        width: 320px;
+    }
+    .safe{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        position: relative;
+        width: 335px;
+    }
+    .circle img{
+        position: absolute;
+        padding-right: 90px;
+        bottom:2px;
+        right: -190px;
+    }
+}
+@media (max-width:321px){
+	body, html {
+        overflow-x: hidden;
+		
+    }
+    .desktop {
+        display: none ;
+    }
+    .head {
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    
+    .headerham {
+        background-color: #fff;
+        height: 44px;
+        padding: 0 16px;
+        display: block;
+        margin-right: 10px;
+        border-radius: 15%;
+    }
+    .head {
+        position: relative;
+    }
+    .hamburger-container {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+    .hamburger-container span {
+        display: block;
+        height: 1px;
+        background: #000;
+        position: relative;
+        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+        top: 0;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+    }
+    #burger:checked ~ .mobile {
+        display: block;
+    }
+    .nav-items {
+        background-color: #f5f5ff;
+        color: #000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .nav-items ul li {
+        line-height: 60px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+	#toggler{
+		display: none;
+	}
+	.footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    .connection {
+        margin-top: 30px;
+    }
+    .footerLine {
+        margin-left: 40px;
+    
+    }
+    .introImg{
+    width: 360px;
+    height: 360px;
+    }
+    .introduction h2{
+        width: 240px;
+    }
+    .safe{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        position: relative;
+        width: 300px;
+    }
+    .circle img{
+        position: absolute;
+        padding-right: 90px;
+        bottom:2px;
+        right: -180px;
+    }
+}

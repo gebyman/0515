@@ -23,7 +23,7 @@ window.addEventListener('scroll', function() {
 
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
-    var fadeInPosition = 1500; 
+    var fadeInPosition = 1000; 
 
     if (scrollPosition >= fadeInPosition) {
         document.querySelector('.res').classList.add('fade-in');
