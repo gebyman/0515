@@ -205,6 +205,12 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+.desktop{
+    display: none;
+}
+#toggler{
+    display: none;
+}
 @media (max-width:1025px){
 	body, html {
         overflow-x: hidden;
