@@ -352,9 +352,7 @@ body{
 	.news h1{
 		margin-top: 30px;
 	}
-	.intro{
-        width: 50%;
-    }
+	
 	.imgsize{
 		
 		width: 300px;
@@ -652,6 +650,143 @@ body{
         margin-left: 33%;
     }
 }
+@media (max-width:713px){
+	body, html {
+        overflow-x: hidden;
+    }
+    .desktop {
+        display: none;
+    }
+    .head {
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
+    }
+    .title{
+        margin-top: 60px;
+    }
+
+    .headerham {
+        background-color: #fff;
+        height: 44px;
+        padding: 0 16px;
+        display: block;
+        margin-right: 10px;
+        border-radius: 15%;
+    }
+    .head {
+        position: relative;
+    }
+    .hamburger-container {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+    .hamburger-container span {
+        display: block;
+        height: 1px;
+        background: #000;
+        position: relative;
+        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+        top: 0;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+    }
+    #burger:checked ~ .mobile {
+        display: block;
+    }
+    .nav-items {
+        background-color: #f5f5ff;
+        color: #000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .nav-items ul li {
+        line-height: 60px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+	#toggler{
+		display: none;
+	}
+	.text h1{
+		font-size: 24px;
+	}
+    .box{
+        width: 200%;
+    }
+    .igg{
+        margin: 0;
+    }
+    .intro{
+        width: 40%;
+    }
+	.news h1{
+		margin-top: 30px;
+	}
+	
+	.imgsize{
+		
+		width: 300px;
+		height: 300px;
+	}
+	
+	.why h1{
+		width: 300px;
+		margin-top: 30px;
+	}
+	.res h1 {
+		width: 300px;
+		margin-top: 30px;
+	}
+
+	.footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    .connection {
+        margin-top: 30px;
+    }
+    .footerLine {
+        margin-left: 33%;
+    }
+}
 @media (max-width:431px){
 	body, html {
         overflow-x: hidden;
@@ -785,14 +920,20 @@ body{
 	}
 	
 	.why h1{
-		width: 300px;
-		margin-top: 30px;
+	margin-left: -15%;
 	}
-	.res h1 {
-		width: 300px;
-		margin-top: 30px;
-	}
-
+    .why h2{
+        margin-left: -15%;
+        margin-bottom: 30%;
+    }
+	
+    .igg h1{
+        margin-left: 50%;
+    }
+    .igg h2{
+        margin-left: 50%;
+        width: 200px;
+    }
 	.footer {
         display: flex;
         flex-direction: column;
@@ -942,21 +1083,34 @@ body{
 		display: flex;
 		flex-direction: column;
 	}
-	.why,.res{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+	.intro{
+        width: 100%;
+        margin-bottom: 30%;
+    }
 	.imgsize{
 		
 		width: 300px;
 		height: 300px;
 	}
-	
+	.title h1{  
+        margin-right: 5%;
+    }
 	.why h1{
-		width: 300px;
-		margin-top: 30px;
-	}
+		width: 200%;
+		margin-left: 15%;
+    }
+    .why h2{
+		
+		margin-left: 15%;
+    }
+    .igg h1{
+		
+		margin-left: 15%;
+    }
+    .igg h2{
+		
+		margin-left: 15%;
+    }
 	.res h1 {
 		width: 300px;
 		margin-top: 30px;
@@ -991,7 +1145,7 @@ body{
         position: relative;
     }
 }
-@media (max-width:394px){
+@media (max-width:393px){
 	body, html {
         overflow-x: hidden;
     }
@@ -1280,17 +1434,17 @@ body{
         width: 60%;
     }
     .why h1{
-        margin-left: 30%;
+        margin-left: 0%;
     }
    .why h2{
     margin: 0;
-    width: 150%;
+   
    }
    .igg h1{
-    margin-left: 30%;
+    margin-right: 0%;
    }
    .igg h2{
-    width: 150%;
+    margin-right: 10%;
    }
 	.col{
 		display: flex;
@@ -1307,19 +1461,27 @@ body{
 		height: 300px;
 	}
 	.intro{
-        display: flex;
-        flex-direction: column  ;
-        justify-content: center;
-        align-items: center;
+        
+        margin-bottom: 30%;
     }
 	.why h1{
-		width: 300px;
-		margin-top: 30px;
+		margin-left: 15%;
+		
+	}
+    .why h2{
+		margin-left: 15%;
+		
 	}
     .why{
         margin-top: 60px;
     }
 	.igg h1 {
+        margin-left: 15%;
+		width: 300px;
+		margin-top: 30px;
+	}
+    .igg h2 {
+        margin-left: 15%;
 		width: 300px;
 		margin-top: 30px;
 	}
@@ -1347,17 +1509,7 @@ body{
         width: 100%;
         overflow: hidden;
     }
-    .prev, .next {
-        position: unset;
-        transition: 0.6s ease;
-        
-    }
-    .pnd{
-        margin-top: 30px;
-    }
-    .dot {
-        position: relative;
-    }
+   
 }
 @media (max-width:361px){
 	body, html {
@@ -1452,7 +1604,10 @@ body{
 	.text h1{
 		font-size: 24px;
 	}
-	
+    .box ul li {
+        font-size: 20px;
+        text-align: left;
+    }
 	.news h1{
 		margin-top: 30px;
 	}
@@ -1463,12 +1618,28 @@ body{
 		justify-content: center;
 		align-items: center;
 	}
-    
+    .box{
+        margin-bottom: 40%;
+        margin-top: 30%;
+        width: 60%;
+    }
+    .why h1{
+        margin-left: 15%;
+    }
+   .why h2{
+    margin-left: 15%;
+   
+   }
+  
+   
+   .igg h2{
+    margin-right: 10%;
+   }
 	.col{
 		display: flex;
 		flex-direction: column;
 	}
-	.why,.res{
+	.why,.igg{
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -1478,44 +1649,47 @@ body{
 		width: 300px;
 		height: 300px;
 	}
+	.intro{
+        
+        margin-bottom: 30%;
+    }
 	
-	.why h1{
-		width: 300px;
+    .why{
+        margin-top: 60px;
+    }
+	.igg h1 {
+		width: 300%;
 		margin-top: 30px;
+        margin-left: 15%;
 	}
-	.res h1 {
-		width: 300px;
-		margin-top: 30px;
-	}
-
+    .igg h2{
+        margin-left: 15%;
+    }
+    .igg img{
+        width: 300px;
+        height: 300px;
+        margin-left: 5%;
+    }
 	.footer {
         display: flex;
         flex-direction: column;
         margin-top: 40px;
         padding-bottom: 120px;
         text-align: center;
+        justify-content: center;
+        padding-right: 5%;
     }
     .connection {
         margin-top: 30px;
     }
     .footerLine {
-        margin-left: 55px;
+        margin-left: 15%;
     }
     .slideshow-container {
         width: 100%;
         overflow: hidden;
     }
-    .prev, .next {
-        position: unset;
-        transition: 0.6s ease;
-        
-    }
-    .pnd{
-        margin-top: 30px;
-    }
-    .dot {
-        position: relative;
-    }
+   
 }
 @media (max-width:321px){
 	body, html {
@@ -1625,12 +1799,16 @@ body{
 		justify-content: center;
 		align-items: center;
 	}
-    
+    .intro{
+        width: 200px;
+        margin-right: 35%;
+        margin-bottom: 30%;
+    }
 	.col{
 		display: flex;
 		flex-direction: column;
 	}
-	.why,.res{
+	.why{
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -1640,26 +1818,26 @@ body{
 		width: 300px;
 		height: 300px;
 	}
-	
+	.title {
+        margin: 0px 30px 50px 0px ;
+    }
 	.why h1{
-        margin-left: 25%;
-		width: 300px;
+        margin-left:20%;
+		
 		margin-top: 30px;
 	}
     .why h2{
-        margin-right: 10%;
-        margin-bottom: 10%;
+        width: 120%;
     }
-	.res h1 {
-		width: 300px;
-		margin-top: 30px;
-	}
+	.igg h1{
+        margin-left: 20%;
+    }
     .igg img{
         width: 80%;
         height: 80%;
     }
     .igg h2{
-        margin-right: 10%;
+        margin-left: 0%;
     }
 	.footer {
         display: flex;
