@@ -1,6 +1,6 @@
 
 body{
-	background: rgb(221, 247, 238);
+	background: rgb(232, 246, 239);
 }
 
 .head {
@@ -20,11 +20,12 @@ body{
 	align-items: center;
 	padding-right: 50px;
 }
-.select {
-   
-    opacity: 0; 
-    transition:  0.5s ease; 
+.head h1{
+    font-size: 36px;
+    margin-left: 30px;
+    color: rgb(175, 175, 87);
 }
+
 
 .select.fade-in {
     opacity: 1; 
@@ -39,31 +40,31 @@ body{
 .photo{
 	position: relative;
 	border-radius: 60px;
+    width: 100%;
 }
 .text {
     position: absolute; 
-    top: 80%; 
-    left: 50%;
+    top: 79%; 
+    left: 55%;
     transform: translate(-50%, -50%);
     text-align: center; 
-    color: white; 
+    color: rgb(255, 255, 255); 
 }
-.text h1{
-	margin-bottom: 45px;
-	font-size: 36px;
-	color: #cbf9db;
-	font-weight: bold;
-}
+
 .text a {
 	text-decoration: none;
-	border: 1px solid rgb(255, 255, 255);
+	font-weight: bold;
+    border-radius: 15px;
 	padding: 10px;
 	font-size: 32px;
-	color: rgb(98, 216, 251);
+	color: #638460;
 }
 .text a:hover{
 	color:white;
-	background: #24701d;
+	background: #638460;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.3s ease-in; 
+    
 }
 .photo img{
 	width: 100%;
@@ -75,7 +76,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background: #cfede2;
+	background: rgb(232, 246, 239);
 	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 	padding-bottom: 60px;
 	opacity: 0;
@@ -96,23 +97,34 @@ body{
 	width: 200px;
 	height: 260px;
 	border-radius: 5%;
-	border: 1px solid #cfede2;
+	
 	font-weight: bold;
 	margin: 60px 60px 20px 60px;
 	color: #2c412a;
 }
 .box h1{
 	transition: 0.3s ease; 
+    line-height: 30px;
+    font-size: 24px;
 }
 .box h1:hover{
-	font-size: 20px;
-	
+	font-size: 32px;
+	line-height: 33px;
+}
+.igg{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.igg img{
+    width: 15%;
+    height: 15%;
 }
 .line{
     height: 3px;
     width: 100%;
-    color: #000;
-    background: #e8f0ee;
+    color: #c9bcbc;
+    background: #c7cac9;
     margin-top: 30px;
 }
 .box span{
@@ -141,16 +153,21 @@ body{
 	justify-content: center;
 	margin-bottom: 20px;
 }
-
+.igg img{
+    width: 140px;
+    height: 140px;
+}
 
 .title{
 	font-size: 36px;
 	text-align: center;
-	margin: 20px 0px 20px 0px;
+	margin: 60px 0px 40px 0px;
+    font-weight: bold;
 }
 .whyImg{
 	width: 500px;
 	height: 500px;
+    margin-bottom: 60px;
 }
 
 .why{
@@ -159,6 +176,10 @@ body{
 }
 .why h1{
 	width: 600px; 
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 30px;
 }
 .res{
 	display: flex;
@@ -485,7 +506,6 @@ body{
         border-radius: 0;
     }
     
-
     .headerham {
         background-color: #fff;
         height: 44px;
@@ -613,7 +633,9 @@ body{
         width: 100%;
         border-radius: 0;
     }
-    
+    .title{
+        margin-top: 60px;
+    }
 
     .headerham {
         background-color: #fff;
@@ -743,7 +765,13 @@ body{
         border-radius: 0;
     }
     
-
+    .photo img{
+        width: 100%;
+        height: 100%;
+    }
+    .title{
+        margin-top: 60px;
+    }
     .headerham {
         background-color: #fff;
         height: 44px;
@@ -901,8 +929,13 @@ body{
         width: 100%;
         border-radius: 0;
     }
-    
-
+    .photo img{
+        width: 100%;
+        height: 100%;
+    }
+    .title{
+        margin-top: 60px;
+    }
     .headerham {
         background-color: #fff;
         height: 44px;
@@ -1058,9 +1091,20 @@ body{
     }
     .photo {
         width: 100%;
+        
         border-radius: 0;
     }
-    
+    .text a{
+        font-size: 24px;
+           
+    }
+    .title {
+        margin-top: 60px;
+    }
+    .photo img{
+        width: 100%;
+        height: 100%;
+    }
 
     .headerham {
         background-color: #fff;
