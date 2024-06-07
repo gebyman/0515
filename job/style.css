@@ -1,4 +1,7 @@
-
+body, html {
+    overflow-x: hidden;
+    
+}
 body{
 	background: rgb(232, 246, 239);
 }
@@ -19,6 +22,7 @@ body{
 	display: flex;
 	align-items: center;
 	padding-right: 50px;
+    
 }
 .head h1{
     font-size: 36px;
@@ -77,7 +81,6 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	background: rgb(232, 246, 239);
-	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 	padding-bottom: 60px;
 	opacity: 0;
     transition: 0.5s ease;
@@ -91,53 +94,41 @@ body{
 	font-weight: bold;
 	margin-bottom: 20px;
 	margin-top: 100px;
-	
+	color: rgb(175, 175, 87);
 }
 .box{
-	width: 200px;
-	height: 260px;
+	width: 50%;
+	height: 16%;
 	border-radius: 5%;
-	
+    
 	font-weight: bold;
-	margin: 60px 60px 20px 60px;
-	color: #2c412a;
+	margin: 0px 60px 0px 60px;
+	
+    text-align: center;
 }
-.box h1{
+.box ul{
 	transition: 0.3s ease; 
     line-height: 30px;
     font-size: 24px;
+    margin-top: 60px;
 }
-.box h1:hover{
-	font-size: 32px;
-	line-height: 33px;
+.intro{
+    width: 50%;
 }
-.igg{
-    text-align: center;
-    margin-top: 30px;
+.box li:hover{
+	font-size: 28px;
+	line-height: 20px;
+}
+.box span h2{
+    margin-top: 20%;
     margin-bottom: 30px;
+    color: #d6e96f;
 }
-.igg img{
-    width: 15%;
-    height: 15%;
-}
-.line{
-    height: 3px;
-    width: 100%;
-    color: #c9bcbc;
-    background: #c7cac9;
-    margin-top: 30px;
-}
-.box span{
-	width: 60px;
-	height: 60px;
-	border: #000 1px solid;
-	margin-left:35%;
-    margin-bottom: 10%;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
+.box ul li {
+    color: #759672;
+    list-style-type: disc;
+    line-height: 200%;
+    
 }
 .box h2{
 	font-size: 36px;
@@ -150,11 +141,19 @@ body{
 	position: relative;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 20px;
+	
 }
+.line{
+    height: 3px;
+    width: 100%;
+    color: #c9bcbc;
+    background: #c7cac9;
+    margin-top: 30px;
+}
+
 .igg img{
-    width: 140px;
-    height: 140px;
+    width: 400px;
+    height: 400px;
 }
 
 .title{
@@ -163,6 +162,7 @@ body{
 	margin: 60px 0px 40px 0px;
     font-weight: bold;
 }
+
 .whyImg{
 	width: 500px;
 	height: 500px;
@@ -171,29 +171,52 @@ body{
 
 .why{
 	display: flex;
-	justify-content: space-around;
+    margin-top: 6%;
+	margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
 }
 .why h1{
 	width: 600px; 
     font-weight: bold;
-    font-size: 24px;
+    font-size: 36px;
     line-height: 30px;
-    margin-left: 30px;
+    margin-left: 10%;
     color: #759672;
 }
-.res{
+.why h2{
+    font-size: 24px;
+    color: #759672;
+    line-height: 30px;
+    font-weight: bold;
+    margin-left: 10%;
+}
+.igg h1{
+	width: 600px; 
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 30px;
+    margin-left: 10%;
+    color: #759672;
+}
+.igg h2{
+    font-size: 24px;
+    color: #759672;
+    line-height: 30px;
+    font-weight: bold;
+    margin-left: 10%;
+}
+.igg{
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-around;
 	margin-top: 60px;
 	margin-bottom: 60px;
-	opacity: 0; 
-    transition:  0.5s ease;
+	margin-right: 5%;
+    margin-left: 5%;
 }
-.res.fade-in {
-    opacity: 1;
-}
-.res h1{
+
+.igg h1{
 	display: flex;
 	align-items: center;
 	width: 600px;
@@ -206,7 +229,7 @@ body{
 	background: #648b86d8;
 	height: 180px;
 	display: flex;
-	justify-content: space-around;
+    padding-left: 5%;
 }
 .footerLine{
 	height: 3px;
@@ -232,7 +255,7 @@ body{
 #toggler{
     display: none;
 }
-@media (max-width:1025px){
+@media (max-width:1023px){
 	body, html {
         overflow-x: hidden;
     }
@@ -325,13 +348,13 @@ body{
 	.text h1{
 		font-size: 24px;
 	}
-	.word{
-		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-	}
+
 	.news h1{
 		margin-top: 30px;
 	}
-	
+	.intro{
+        width: 50%;
+    }
 	.imgsize{
 		
 		width: 300px;
@@ -362,6 +385,7 @@ body{
     }
 }
 @media (max-width:913px){
+    
 	body, html {
         overflow-x: hidden;
     }
@@ -454,9 +478,9 @@ body{
 	.text h1{
 		font-size: 24px;
 	}
-	.word{
-		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-	}
+    .intro{
+        width: 50%;
+    }
 	.news h1{
 		margin-top: 30px;
 	}
@@ -487,137 +511,10 @@ body{
         margin-top: 30px;
     }
     .footerLine {
-        margin-left: 330px;
+        margin-left: 36%;
     }
 }
-@media (max-width:821px){
-	body, html {
-        overflow-x: hidden;
-    }
-    .desktop {
-        display: none;
-    }
-    .head {
-        max-width: 100%;
-        flex-wrap: nowrap;
-    }
-    .photo {
-        width: 100%;
-        border-radius: 0;
-    }
-    
-    .headerham {
-        background-color: #fff;
-        height: 44px;
-        padding: 0 16px;
-        display: block;
-        margin-right: 10px;
-        border-radius: 15%;
-    }
-    .head {
-        position: relative;
-    }
-    .hamburger-container {
-        width: 20px;
-        height: 20px;
-        display: block;
-        position: relative;
-        top: 16px;
-    }
-    .hamburger-container span {
-        display: block;
-        height: 1px;
-        background: #000;
-        position: relative;
-        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
-        top: 0;
-    }
-    #toggler:checked + label .hamburger-container span:nth-child(1) {
-        transform: rotate(45deg);
-        top: 4px;
-        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
-    }
-    #toggler:checked + label .hamburger-container span:nth-child(2) {
-        transform: rotate(-45deg);
-        top: -4px;
-        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
-    }
-    .hamburger-container span:nth-child(2) {
-        margin-top: 7px;
-    }
-    #burger:checked ~ .mobile {
-        display: block;
-    }
-    .nav-items {
-        background-color: #f5f5ff;
-        color: #000;
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        transform: scaleY(0);
-        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
-        transform-origin: 50% 0;
-        opacity: 0;
-    }
-    #toggler:checked ~ .nav-items {
-        transform: scaleY(1);
-        opacity: 1;
-    }
-    .nav-items ul {
-        display: flex;
-        flex-direction: column;
-        margin-left: 60px;
-        margin-top: 30px;
-    }
-    .nav-items ul li {
-        line-height: 60px;
-        font-size: 36px;
-        font-weight: bold;
-    }
-	#toggler{
-		display: none;
-	}
-	.text h1{
-		font-size: 24px;
-	}
-	.word{
-		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-	}
-	.news h1{
-		margin-top: 30px;
-	}
-	
-	.imgsize{
-		
-		width: 300px;
-		height: 300px;
-	}
-	
-	.why h1{
-		width: 300px;
-		margin-top: 30px;
-	}
-	.res h1 {
-		width: 300px;
-		margin-top: 30px;
-	}
 
-	.footer {
-        display: flex;
-        flex-direction: column;
-        margin-top: 40px;
-        padding-bottom: 120px;
-        text-align: center;
-    }
-    .connection {
-        margin-top: 30px;
-    }
-    .footerLine {
-        margin-left: 280px;
-    }
-}
 @media (max-width:769px){
 	body, html {
         overflow-x: hidden;
@@ -713,9 +610,15 @@ body{
 	.text h1{
 		font-size: 24px;
 	}
-	.word{
-		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-	}
+    .box{
+        width: 200%;
+    }
+    .igg{
+        margin: 0;
+    }
+    .intro{
+        width: 50%;
+    }
 	.news h1{
 		margin-top: 30px;
 	}
@@ -746,7 +649,7 @@ body{
         margin-top: 30px;
     }
     .footerLine {
-        margin-left: 260px;
+        margin-left: 33%;
     }
 }
 @media (max-width:431px){
@@ -848,9 +751,14 @@ body{
 	.text h1{
 		font-size: 24px;
 	}
-	.word{
-		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-	}
+    .box{
+        width: 200%;
+    }
+    .igg img{
+        width: 90%;
+        height: 90%;
+        margin-left: 5%;
+    }
 	.news h1{
 		margin-top: 30px;
 	}
@@ -1012,9 +920,14 @@ body{
 	.text h1{
 		font-size: 24px;
 	}
-	.word{
-		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-	}
+    .box{
+        width: 200%;
+    }
+    .igg img{
+        margin-left: 5%;
+        width: 90%;
+        height: 90%;
+    }
 	.news h1{
 		margin-top: 30px;
 	}
@@ -1078,7 +991,7 @@ body{
         position: relative;
     }
 }
-@media (max-width:391px){
+@media (max-width:394px){
 	body, html {
         overflow-x: hidden;
     }
@@ -1182,9 +1095,7 @@ body{
 	.text h1{
 		font-size: 24px;
 	}
-	.word{
-		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-	}
+	
 	.news h1{
 		margin-top: 30px;
 	}
@@ -1195,6 +1106,14 @@ body{
 		justify-content: center;
 		align-items: center;
 	}
+    .box{
+        width: 200%;
+    }
+    .igg img {
+        margin-left: 5%;
+        width: 90%;
+        height: 90%;
+    }
 	.col{
 		display: flex;
 		flex-direction: column;
@@ -1341,9 +1260,10 @@ body{
 	.text h1{
 		font-size: 24px;
 	}
-	.word{
-		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-	}
+    .box ul li {
+        font-size: 20px;
+        text-align: left;
+    }
 	.news h1{
 		margin-top: 30px;
 	}
@@ -1354,11 +1274,29 @@ body{
 		justify-content: center;
 		align-items: center;
 	}
+    .box{
+        margin-bottom: 40%;
+        margin-top: 30%;
+        width: 60%;
+    }
+    .why h1{
+        margin-left: 30%;
+    }
+   .why h2{
+    margin: 0;
+    width: 150%;
+   }
+   .igg h1{
+    margin-left: 30%;
+   }
+   .igg h2{
+    width: 150%;
+   }
 	.col{
 		display: flex;
 		flex-direction: column;
 	}
-	.why,.res{
+	.why,.igg{
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -1368,28 +1306,42 @@ body{
 		width: 300px;
 		height: 300px;
 	}
-	
+	.intro{
+        display: flex;
+        flex-direction: column  ;
+        justify-content: center;
+        align-items: center;
+    }
 	.why h1{
 		width: 300px;
 		margin-top: 30px;
 	}
-	.res h1 {
+    .why{
+        margin-top: 60px;
+    }
+	.igg h1 {
 		width: 300px;
 		margin-top: 30px;
 	}
-
+    .igg img{
+        width: 300px;
+        height: 300px;
+        margin-left: 5%;
+    }
 	.footer {
         display: flex;
         flex-direction: column;
         margin-top: 40px;
         padding-bottom: 120px;
         text-align: center;
+        justify-content: center;
+        padding-right: 5%;
     }
     .connection {
         margin-top: 30px;
     }
     .footerLine {
-        margin-left: 60px;
+        margin-left: 15%;
     }
     .slideshow-container {
         width: 100%;
@@ -1500,9 +1452,7 @@ body{
 	.text h1{
 		font-size: 24px;
 	}
-	.word{
-		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-	}
+	
 	.news h1{
 		margin-top: 30px;
 	}
@@ -1550,6 +1500,179 @@ body{
     }
     .footerLine {
         margin-left: 55px;
+    }
+    .slideshow-container {
+        width: 100%;
+        overflow: hidden;
+    }
+    .prev, .next {
+        position: unset;
+        transition: 0.6s ease;
+        
+    }
+    .pnd{
+        margin-top: 30px;
+    }
+    .dot {
+        position: relative;
+    }
+}
+@media (max-width:321px){
+	body, html {
+        overflow-x: hidden;
+    }
+    .desktop {
+        display: none;
+    }
+    .head {
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+
+    .headerham {
+        background-color: #fff;
+        height: 44px;
+        padding: 0 16px;
+        display: block;
+        margin-right: 10px;
+        border-radius: 15%;
+    }
+    .head {
+        position: relative;
+    }
+    .hamburger-container {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+    .hamburger-container span {
+        display: block;
+        height: 1px;
+        background: #000;
+        position: relative;
+        transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+        top: 0;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top .3s ease-in-out, transform .3s ease-in-out .3s;
+    }
+    .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+    }
+    #burger:checked ~ .mobile {
+        display: block;
+    }
+    .nav-items {
+        background-color: #f5f5ff;
+        color: #000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+    #toggler:checked ~ .nav-items {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .nav-items ul li {
+        line-height: 60px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+	#toggler{
+		display: none;
+	}
+	.text h1{
+		font-size: 24px;
+	}
+    
+	.intro{
+        width: 100%;
+        text-align: center;
+    }
+	.news h1{
+		margin-top: 30px;
+	}
+	.boxes{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+    
+	.col{
+		display: flex;
+		flex-direction: column;
+	}
+	.why,.res{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.imgsize{
+		
+		width: 300px;
+		height: 300px;
+	}
+	
+	.why h1{
+        margin-left: 25%;
+		width: 300px;
+		margin-top: 30px;
+	}
+    .why h2{
+        margin-right: 10%;
+        margin-bottom: 10%;
+    }
+	.res h1 {
+		width: 300px;
+		margin-top: 30px;
+	}
+    .igg img{
+        width: 80%;
+        height: 80%;
+    }
+    .igg h2{
+        margin-right: 10%;
+    }
+	.footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+    .connection {
+        margin-top: 30px;
+    }
+    .footerLine {
+        margin-left: 8%;
     }
     .slideshow-container {
         width: 100%;
